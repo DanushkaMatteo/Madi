@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madi Birthday Wish</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page" aria-live="polite">
+      <div class="floating-layer" aria-hidden="true"></div>
+
+      <section class="intro" aria-labelledby="intro-title">
+        <div class="intro-inner">
+          <div class="home-sticker" aria-hidden="true">
+            <img
+              class="sticker-image sticker-image-home"
+              src="assets/madi-excited-sticker.png?v=3"
+              alt=""
+            />
+          </div>
+          <div class="closed-letter" aria-hidden="true">
+            <div class="closed-paper"></div>
+            <div class="closed-envelope">
+              <span class="flap"></span>
+              <span class="seal">M</span>
+            </div>
+          </div>
+          <h1 id="intro-title">You got a letter :)</h1>
+          <button
+            class="open-button"
+            type="button"
+            aria-controls="birthday-card"
+            aria-expanded="false"
+          >
+            open it
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="letter-scene"
+        id="birthday-card"
+        aria-labelledby="card-title"
+        aria-hidden="true"
+      >
+        <div class="sticker-board" aria-hidden="true">
+          <img
+            class="sticker-image sticker-image-letter"
+            src="assets/madi-excited-sticker.png?v=3"
+            alt=""
+          />
+        </div>
+
+        <article class="letter" tabindex="-1">
+          <div class="letter-top">
+            <span class="stamp">M</span>
+          </div>
+          <h2 id="card-title">Happy birthday Madi!!! 🥳</h2>
+          <p class="greeting-line">Alles Gute zum Geburtstag!!</p>
+          <p
+            class="message"
+            data-letter
+            data-message="Hope you have the best day ever! I’m honestly so happy for you and proud of you for chasing your dreams. You’ve put in so much effort this year, and it’s been really nice to see.&#10;&#10;I’m so excited for you to start your career as a teacher at the end of this year. I already know the kids are going to love you, you’ll definitely be one of their favourites🫂🙌🏻&#10;&#10;Wishing you all the best, like always. You deserve so much happiness and all the good things coming your way💛✨&#10;&#10;Dan &amp; Nicholas"
+          ></p>
+          <div class="letter-footer" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
