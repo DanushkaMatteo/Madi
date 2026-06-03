@@ -283,9 +283,10 @@ h1 {
 .letter-scene {
   position: absolute;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 16rem;
+  grid-template-columns: minmax(34rem, 43rem) 17rem;
   gap: 2rem;
   align-items: center;
+  justify-content: center;
   opacity: 0;
   transform: translateY(1.7rem) scale(0.985);
   visibility: hidden;
@@ -293,9 +294,10 @@ h1 {
 
 .letter {
   position: relative;
+  grid-column: 1;
   width: min(100%, 43rem);
   min-height: 35rem;
-  justify-self: end;
+  justify-self: center;
   overflow: hidden;
   border: 1px solid rgba(48, 40, 46, 0.13);
   border-radius: 8px;
@@ -417,6 +419,7 @@ h2 {
 
 .sticker-board {
   position: relative;
+  grid-column: 2;
   width: 17rem;
   height: 23rem;
   justify-self: start;
@@ -556,7 +559,7 @@ h2 {
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 980px) {
   .letter-scene {
     grid-template-columns: 1fr;
     gap: 0;
@@ -564,11 +567,13 @@ h2 {
   }
 
   .letter {
+    grid-column: 1;
     justify-self: center;
   }
 
   .sticker-board {
     position: absolute;
+    grid-column: 1;
     inset: auto 0 0 auto;
     width: 12rem;
     height: auto;
